@@ -31,7 +31,7 @@ namespace Lab1
             this.buttonSave = new System.Windows.Forms.Button();
             this.buttonLoad = new System.Windows.Forms.Button();
             this.textBoxCode = new System.Windows.Forms.TextBox();
-            this.textBoxRejegister = new System.Windows.Forms.TextBox();
+            this.textBoxRegister = new System.Windows.Forms.TextBox();
             this.labelRegisters = new System.Windows.Forms.Label();
             this.radioButtonMOV = new System.Windows.Forms.RadioButton();
             this.radioButtonSUB = new System.Windows.Forms.RadioButton();
@@ -145,14 +145,14 @@ namespace Lab1
             this.textBoxCode.Size = new System.Drawing.Size(166, 206);
             this.textBoxCode.TabIndex = 13;
             // 
-            // textBoxRejegister
+            // textBoxRegister
             // 
-            this.textBoxRejegister.Location = new System.Drawing.Point(26, 240);
-            this.textBoxRejegister.Multiline = true;
-            this.textBoxRejegister.Name = "textBoxRejegister";
-            this.textBoxRejegister.ReadOnly = true;
-            this.textBoxRejegister.Size = new System.Drawing.Size(158, 187);
-            this.textBoxRejegister.TabIndex = 14;
+            this.textBoxRegister.Location = new System.Drawing.Point(26, 240);
+            this.textBoxRegister.Multiline = true;
+            this.textBoxRegister.Name = "textBoxRegister";
+            this.textBoxRegister.ReadOnly = true;
+            this.textBoxRegister.Size = new System.Drawing.Size(158, 187);
+            this.textBoxRegister.TabIndex = 14;
             // 
             // labelRegisters
             // 
@@ -469,7 +469,7 @@ namespace Lab1
             this.Controls.Add(this.groupBoxRegister1);
             this.Controls.Add(this.groupBoxOrder);
             this.Controls.Add(this.labelRegisters);
-            this.Controls.Add(this.textBoxRejegister);
+            this.Controls.Add(this.textBoxRegister);
             this.Controls.Add(this.textBoxCode);
             this.Controls.Add(this.buttonLoad);
             this.Controls.Add(this.buttonSave);
@@ -499,7 +499,7 @@ namespace Lab1
         private System.Windows.Forms.Button buttonSave;
         private System.Windows.Forms.Button buttonLoad;
         private System.Windows.Forms.TextBox textBoxCode;
-        private System.Windows.Forms.TextBox textBoxRejegister;
+        private System.Windows.Forms.TextBox textBoxRegister;
         private System.Windows.Forms.Label labelRegisters;
         private System.Windows.Forms.RadioButton radioButtonMOV;
         private System.Windows.Forms.RadioButton radioButtonSUB;
