@@ -10,7 +10,6 @@ namespace Lab1
     {
         int OrderNum = 1;
         int Step = 0;
-
         Register RegisterA = new Register("A");
         Register RegisterB = new Register("B");
         Register RegisterC = new Register("C");
@@ -140,19 +139,18 @@ namespace Lab1
         {
             //Load your program from txt file
             var GetDirectory = Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location);
-            RegisterA = new Register("A");
-            RegisterB = new Register("B");
-            RegisterC = new Register("C");
-            RegisterD = new Register("D");
+            RegisterA.ZeroValue();
+            RegisterB.ZeroValue();
+            RegisterC.ZeroValue();
+            RegisterD.ZeroValue();
             Step = 0;
 
-            textBoxRejegister.Text = "";
-            textBoxRejegister.Text += "Register " + RegisterA.ReturnName() + " " + RegisterA.ReturnValue().ToString() + "\r\n"
+            textBoxRegister.Text = "";
+            textBoxRegister.Text += "Register " + RegisterA.ReturnName() + " " + RegisterA.ReturnValue().ToString() + "\r\n"
                + "Register " + RegisterB.ReturnName() + " " + RegisterB.ReturnValue().ToString() + "\r\n"
                + "Register " + RegisterC.ReturnName() + " " + RegisterC.ReturnValue().ToString() + "\r\n"
                + "Register " + RegisterD.ReturnName() + " " + RegisterD.ReturnValue().ToString() + "\r\n";
             textBoxCurrentStep.Text = (Step).ToString();
-
 
             textBoxCode.Text = "";
             textBoxCode.Text = System.IO.File.ReadAllText(@GetDirectory+"\\ProgramCode.txt");
@@ -170,8 +168,8 @@ namespace Lab1
             Interpreter(Step, StepWork);
             Step++;
 
-            textBoxRejegister.Text = "";
-            textBoxRejegister.Text += "Register " + RegisterA.ReturnName() + " " + RegisterA.ReturnValue().ToString() + "\r\n"
+            textBoxRegister.Text = "";
+            textBoxRegister.Text += "Register " + RegisterA.ReturnName() + " " + RegisterA.ReturnValue().ToString() + "\r\n"
                + "Register " + RegisterB.ReturnName() + " " + RegisterB.ReturnValue().ToString() + "\r\n"
                + "Register " + RegisterC.ReturnName() + " " + RegisterC.ReturnValue().ToString() + "\r\n"
                + "Register " + RegisterD.ReturnName() + " " + RegisterD.ReturnValue().ToString() + "\r\n";
@@ -223,7 +221,7 @@ namespace Lab1
                     {
                         RegisterFirst.Substract(Number, RegisterFirstPart);
                     }
-                    textBoxRejegister.Text = "Register " + RegisterFirst.ReturnName() + " " + RegisterFirst.ReturnValue().ToString();
+                    textBoxRegister.Text = "Register " + RegisterFirst.ReturnName() + " " + RegisterFirst.ReturnValue().ToString();
                     textBoxCurrentStep.Text = OrderNum.ToString();
                 }
 
@@ -241,7 +239,7 @@ namespace Lab1
                     {
                         RegisterFirst.Substract(Number, RegisterFirstPart);
                     }
-                    textBoxRejegister.Text = "Register " + RegisterFirst.ReturnName() + " " + RegisterFirst.ReturnValue().ToString();
+                    textBoxRegister.Text = "Register " + RegisterFirst.ReturnName() + " " + RegisterFirst.ReturnValue().ToString();
                     textBoxCurrentStep.Text = (Step+1).ToString();
                 }
             }
