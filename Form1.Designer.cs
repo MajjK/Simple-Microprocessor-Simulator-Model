@@ -1,16 +1,14 @@
-﻿namespace Lab1
+namespace Lab1
 {
     partial class Form1
     {
         /// <summary>
-        /// Wymagana zmienna projektanta.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
         /// <summary>
-        /// Wyczyść wszystkie używane zasoby.
         /// </summary>
-        /// <param name="disposing">prawda, jeżeli zarządzane zasoby powinny zostać zlikwidowane; Fałsz w przeciwnym wypadku.</param>
+        /// <param name="disposing"></param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -23,25 +21,23 @@
         #region Kod generowany przez Projektanta formularzy systemu Windows
 
         /// <summary>
-        /// Metoda wymagana do obsługi projektanta — nie należy modyfikować
-        /// jej zawartości w edytorze kodu.
         /// </summary>
         private void InitializeComponent()
         {
-            this.buttonDodaj_Rozkaz = new System.Windows.Forms.Button();
+            this.buttonAdd_Order = new System.Windows.Forms.Button();
             this.buttonStart = new System.Windows.Forms.Button();
-            this.numericUpDownLiczba = new System.Windows.Forms.NumericUpDown();
-            this.labelLiczba = new System.Windows.Forms.Label();
-            this.buttonZapisz = new System.Windows.Forms.Button();
-            this.buttonWczytaj = new System.Windows.Forms.Button();
-            this.textBoxKod = new System.Windows.Forms.TextBox();
-            this.textBoxRejestr = new System.Windows.Forms.TextBox();
-            this.labelRejestry = new System.Windows.Forms.Label();
+            this.numericUpDownValue = new System.Windows.Forms.NumericUpDown();
+            this.labelValue = new System.Windows.Forms.Label();
+            this.buttonSave = new System.Windows.Forms.Button();
+            this.buttonLoad = new System.Windows.Forms.Button();
+            this.textBoxCode = new System.Windows.Forms.TextBox();
+            this.textBoxRejegister = new System.Windows.Forms.TextBox();
+            this.labelRegisters = new System.Windows.Forms.Label();
             this.radioButtonMOV = new System.Windows.Forms.RadioButton();
             this.radioButtonSUB = new System.Windows.Forms.RadioButton();
             this.radioButtonADD = new System.Windows.Forms.RadioButton();
-            this.groupBoxRozkaz = new System.Windows.Forms.GroupBox();
-            this.groupBoxRejestr1 = new System.Windows.Forms.GroupBox();
+            this.groupBoxOrder = new System.Windows.Forms.GroupBox();
+            this.groupBoxRegister1 = new System.Windows.Forms.GroupBox();
             this.ButtonRej1DL = new System.Windows.Forms.RadioButton();
             this.ButtonRej1DH = new System.Windows.Forms.RadioButton();
             this.ButtonRej1CL = new System.Windows.Forms.RadioButton();
@@ -50,7 +46,7 @@
             this.ButtonRej1BH = new System.Windows.Forms.RadioButton();
             this.ButtonRej1AL = new System.Windows.Forms.RadioButton();
             this.ButtonRej1AH = new System.Windows.Forms.RadioButton();
-            this.groupBoxRejestr2 = new System.Windows.Forms.GroupBox();
+            this.groupBoxRegister2 = new System.Windows.Forms.GroupBox();
             this.ButtonRej2None = new System.Windows.Forms.RadioButton();
             this.ButtonRej2DL = new System.Windows.Forms.RadioButton();
             this.ButtonRej2DH = new System.Windows.Forms.RadioButton();
@@ -60,24 +56,24 @@
             this.ButtonRej2BH = new System.Windows.Forms.RadioButton();
             this.ButtonRej2AL = new System.Windows.Forms.RadioButton();
             this.ButtonRej2AH = new System.Windows.Forms.RadioButton();
-            this.textBoxAktualnyKrok = new System.Windows.Forms.TextBox();
-            this.labelKrok = new System.Windows.Forms.Label();
-            this.checkBoxPracaKrokowa = new System.Windows.Forms.CheckBox();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownLiczba)).BeginInit();
-            this.groupBoxRozkaz.SuspendLayout();
-            this.groupBoxRejestr1.SuspendLayout();
-            this.groupBoxRejestr2.SuspendLayout();
+            this.textBoxCurrentStep = new System.Windows.Forms.TextBox();
+            this.labelStep = new System.Windows.Forms.Label();
+            this.checkBoxStepWork = new System.Windows.Forms.CheckBox();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownValue)).BeginInit();
+            this.groupBoxOrder.SuspendLayout();
+            this.groupBoxRegister1.SuspendLayout();
+            this.groupBoxRegister2.SuspendLayout();
             this.SuspendLayout();
             // 
-            // buttonDodaj_Rozkaz
+            // buttonAdd_Order
             // 
-            this.buttonDodaj_Rozkaz.Location = new System.Drawing.Point(619, 38);
-            this.buttonDodaj_Rozkaz.Name = "buttonDodaj_Rozkaz";
-            this.buttonDodaj_Rozkaz.Size = new System.Drawing.Size(158, 58);
-            this.buttonDodaj_Rozkaz.TabIndex = 1;
-            this.buttonDodaj_Rozkaz.Text = "Dodaj Rozkaz";
-            this.buttonDodaj_Rozkaz.UseVisualStyleBackColor = true;
-            this.buttonDodaj_Rozkaz.Click += new System.EventHandler(this.Rozkaz_Click);
+            this.buttonAdd_Order.Location = new System.Drawing.Point(619, 38);
+            this.buttonAdd_Order.Name = "buttonAdd_Order";
+            this.buttonAdd_Order.Size = new System.Drawing.Size(158, 58);
+            this.buttonAdd_Order.TabIndex = 1;
+            this.buttonAdd_Order.Text = "Add Order";
+            this.buttonAdd_Order.UseVisualStyleBackColor = true;
+            this.buttonAdd_Order.Click += new System.EventHandler(this.Order_Click);
             // 
             // buttonStart
             // 
@@ -85,87 +81,87 @@
             this.buttonStart.Name = "buttonStart";
             this.buttonStart.Size = new System.Drawing.Size(119, 56);
             this.buttonStart.TabIndex = 2;
-            this.buttonStart.Text = "Uruchom Progam";
+            this.buttonStart.Text = "Execute Progam";
             this.buttonStart.UseVisualStyleBackColor = true;
             this.buttonStart.Click += new System.EventHandler(this.buttonStart_Click);
             // 
-            // numericUpDownLiczba
+            // numericUpDownValue
             // 
-            this.numericUpDownLiczba.Location = new System.Drawing.Point(461, 41);
-            this.numericUpDownLiczba.Maximum = new decimal(new int[] {
+            this.numericUpDownValue.Location = new System.Drawing.Point(461, 41);
+            this.numericUpDownValue.Maximum = new decimal(new int[] {
             255,
             0,
             0,
             0});
-            this.numericUpDownLiczba.Minimum = new decimal(new int[] {
+            this.numericUpDownValue.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
-            this.numericUpDownLiczba.Name = "numericUpDownLiczba";
-            this.numericUpDownLiczba.Size = new System.Drawing.Size(120, 22);
-            this.numericUpDownLiczba.TabIndex = 9;
-            this.numericUpDownLiczba.Value = new decimal(new int[] {
+            this.numericUpDownValue.Name = "numericUpDownValue";
+            this.numericUpDownValue.Size = new System.Drawing.Size(120, 22);
+            this.numericUpDownValue.TabIndex = 9;
+            this.numericUpDownValue.Value = new decimal(new int[] {
             1,
             0,
             0,
             0});
             // 
-            // labelLiczba
+            // labelValue
             // 
-            this.labelLiczba.AutoSize = true;
-            this.labelLiczba.Location = new System.Drawing.Point(490, 19);
-            this.labelLiczba.Name = "labelLiczba";
-            this.labelLiczba.Size = new System.Drawing.Size(49, 17);
-            this.labelLiczba.TabIndex = 10;
-            this.labelLiczba.Text = "Liczba";
+            this.labelValue.AutoSize = true;
+            this.labelValue.Location = new System.Drawing.Point(490, 19);
+            this.labelValue.Name = "labelValue";
+            this.labelValue.Size = new System.Drawing.Size(44, 17);
+            this.labelValue.TabIndex = 10;
+            this.labelValue.Text = "Value";
             // 
-            // buttonZapisz
+            // buttonSave
             // 
-            this.buttonZapisz.Location = new System.Drawing.Point(511, 171);
-            this.buttonZapisz.Name = "buttonZapisz";
-            this.buttonZapisz.Size = new System.Drawing.Size(94, 37);
-            this.buttonZapisz.TabIndex = 11;
-            this.buttonZapisz.Text = "Zapisz";
-            this.buttonZapisz.UseVisualStyleBackColor = true;
-            this.buttonZapisz.Click += new System.EventHandler(this.buttonZapisz_Click);
+            this.buttonSave.Location = new System.Drawing.Point(511, 171);
+            this.buttonSave.Name = "buttonSave";
+            this.buttonSave.Size = new System.Drawing.Size(94, 37);
+            this.buttonSave.TabIndex = 11;
+            this.buttonSave.Text = "Save";
+            this.buttonSave.UseVisualStyleBackColor = true;
+            this.buttonSave.Click += new System.EventHandler(this.buttonSave_Click);
             // 
-            // buttonWczytaj
+            // buttonLoad
             // 
-            this.buttonWczytaj.Location = new System.Drawing.Point(511, 240);
-            this.buttonWczytaj.Name = "buttonWczytaj";
-            this.buttonWczytaj.Size = new System.Drawing.Size(94, 35);
-            this.buttonWczytaj.TabIndex = 12;
-            this.buttonWczytaj.Text = "Wczytaj";
-            this.buttonWczytaj.UseVisualStyleBackColor = true;
-            this.buttonWczytaj.Click += new System.EventHandler(this.buttonWczytaj_Click);
+            this.buttonLoad.Location = new System.Drawing.Point(511, 240);
+            this.buttonLoad.Name = "buttonLoad";
+            this.buttonLoad.Size = new System.Drawing.Size(94, 35);
+            this.buttonLoad.TabIndex = 12;
+            this.buttonLoad.Text = "Load";
+            this.buttonLoad.UseVisualStyleBackColor = true;
+            this.buttonLoad.Click += new System.EventHandler(this.buttonLoad_Click);
             // 
-            // textBoxKod
+            // textBoxCode
             // 
-            this.textBoxKod.Location = new System.Drawing.Point(619, 115);
-            this.textBoxKod.Multiline = true;
-            this.textBoxKod.Name = "textBoxKod";
-            this.textBoxKod.ReadOnly = true;
-            this.textBoxKod.Size = new System.Drawing.Size(166, 206);
-            this.textBoxKod.TabIndex = 13;
+            this.textBoxCode.Location = new System.Drawing.Point(619, 115);
+            this.textBoxCode.Multiline = true;
+            this.textBoxCode.Name = "textBoxCode";
+            this.textBoxCode.ReadOnly = true;
+            this.textBoxCode.Size = new System.Drawing.Size(166, 206);
+            this.textBoxCode.TabIndex = 13;
             // 
-            // textBoxRejestr
+            // textBoxRejegister
             // 
-            this.textBoxRejestr.Location = new System.Drawing.Point(26, 240);
-            this.textBoxRejestr.Multiline = true;
-            this.textBoxRejestr.Name = "textBoxRejestr";
-            this.textBoxRejestr.ReadOnly = true;
-            this.textBoxRejestr.Size = new System.Drawing.Size(158, 187);
-            this.textBoxRejestr.TabIndex = 14;
+            this.textBoxRejegister.Location = new System.Drawing.Point(26, 240);
+            this.textBoxRejegister.Multiline = true;
+            this.textBoxRejegister.Name = "textBoxRejegister";
+            this.textBoxRejegister.ReadOnly = true;
+            this.textBoxRejegister.Size = new System.Drawing.Size(158, 187);
+            this.textBoxRejegister.TabIndex = 14;
             // 
-            // labelRejestry
+            // labelRegisters
             // 
-            this.labelRejestry.AutoSize = true;
-            this.labelRejestry.Location = new System.Drawing.Point(81, 220);
-            this.labelRejestry.Name = "labelRejestry";
-            this.labelRejestry.Size = new System.Drawing.Size(60, 17);
-            this.labelRejestry.TabIndex = 17;
-            this.labelRejestry.Text = "Rejestry";
+            this.labelRegisters.AutoSize = true;
+            this.labelRegisters.Location = new System.Drawing.Point(81, 220);
+            this.labelRegisters.Name = "labelRegisters";
+            this.labelRegisters.Size = new System.Drawing.Size(68, 17);
+            this.labelRegisters.TabIndex = 17;
+            this.labelRegisters.Text = "Registers";
             // 
             // radioButtonMOV
             // 
@@ -200,34 +196,34 @@
             this.radioButtonADD.Text = "ADD";
             this.radioButtonADD.UseVisualStyleBackColor = true;
             // 
-            // groupBoxRozkaz
+            // groupBoxOrder
             // 
-            this.groupBoxRozkaz.Controls.Add(this.radioButtonMOV);
-            this.groupBoxRozkaz.Controls.Add(this.radioButtonADD);
-            this.groupBoxRozkaz.Controls.Add(this.radioButtonSUB);
-            this.groupBoxRozkaz.Location = new System.Drawing.Point(26, 19);
-            this.groupBoxRozkaz.Name = "groupBoxRozkaz";
-            this.groupBoxRozkaz.Size = new System.Drawing.Size(104, 148);
-            this.groupBoxRozkaz.TabIndex = 21;
-            this.groupBoxRozkaz.TabStop = false;
-            this.groupBoxRozkaz.Text = "Rozkaz";
+            this.groupBoxOrder.Controls.Add(this.radioButtonMOV);
+            this.groupBoxOrder.Controls.Add(this.radioButtonADD);
+            this.groupBoxOrder.Controls.Add(this.radioButtonSUB);
+            this.groupBoxOrder.Location = new System.Drawing.Point(26, 19);
+            this.groupBoxOrder.Name = "groupBoxOrder";
+            this.groupBoxOrder.Size = new System.Drawing.Size(104, 148);
+            this.groupBoxOrder.TabIndex = 21;
+            this.groupBoxOrder.TabStop = false;
+            this.groupBoxOrder.Text = "Order";
             // 
-            // groupBoxRejestr1
+            // groupBoxRegister1
             // 
-            this.groupBoxRejestr1.Controls.Add(this.ButtonRej1DL);
-            this.groupBoxRejestr1.Controls.Add(this.ButtonRej1DH);
-            this.groupBoxRejestr1.Controls.Add(this.ButtonRej1CL);
-            this.groupBoxRejestr1.Controls.Add(this.ButtonRej1CH);
-            this.groupBoxRejestr1.Controls.Add(this.ButtonRej1BL);
-            this.groupBoxRejestr1.Controls.Add(this.ButtonRej1BH);
-            this.groupBoxRejestr1.Controls.Add(this.ButtonRej1AL);
-            this.groupBoxRejestr1.Controls.Add(this.ButtonRej1AH);
-            this.groupBoxRejestr1.Location = new System.Drawing.Point(169, 19);
-            this.groupBoxRejestr1.Name = "groupBoxRejestr1";
-            this.groupBoxRejestr1.Size = new System.Drawing.Size(125, 150);
-            this.groupBoxRejestr1.TabIndex = 22;
-            this.groupBoxRejestr1.TabStop = false;
-            this.groupBoxRejestr1.Text = "Rejestr 1";
+            this.groupBoxRegister1.Controls.Add(this.ButtonRej1DL);
+            this.groupBoxRegister1.Controls.Add(this.ButtonRej1DH);
+            this.groupBoxRegister1.Controls.Add(this.ButtonRej1CL);
+            this.groupBoxRegister1.Controls.Add(this.ButtonRej1CH);
+            this.groupBoxRegister1.Controls.Add(this.ButtonRej1BL);
+            this.groupBoxRegister1.Controls.Add(this.ButtonRej1BH);
+            this.groupBoxRegister1.Controls.Add(this.ButtonRej1AL);
+            this.groupBoxRegister1.Controls.Add(this.ButtonRej1AH);
+            this.groupBoxRegister1.Location = new System.Drawing.Point(169, 19);
+            this.groupBoxRegister1.Name = "groupBoxRegister1";
+            this.groupBoxRegister1.Size = new System.Drawing.Size(125, 150);
+            this.groupBoxRegister1.TabIndex = 22;
+            this.groupBoxRegister1.TabStop = false;
+            this.groupBoxRegister1.Text = "Register 1";
             // 
             // ButtonRej1DL
             // 
@@ -317,23 +313,23 @@
             this.ButtonRej1AH.Text = "AXH";
             this.ButtonRej1AH.UseVisualStyleBackColor = true;
             // 
-            // groupBoxRejestr2
+            // groupBoxRegister2
             // 
-            this.groupBoxRejestr2.Controls.Add(this.ButtonRej2None);
-            this.groupBoxRejestr2.Controls.Add(this.ButtonRej2DL);
-            this.groupBoxRejestr2.Controls.Add(this.ButtonRej2DH);
-            this.groupBoxRejestr2.Controls.Add(this.ButtonRej2CL);
-            this.groupBoxRejestr2.Controls.Add(this.ButtonRej2CH);
-            this.groupBoxRejestr2.Controls.Add(this.ButtonRej2BL);
-            this.groupBoxRejestr2.Controls.Add(this.ButtonRej2BH);
-            this.groupBoxRejestr2.Controls.Add(this.ButtonRej2AL);
-            this.groupBoxRejestr2.Controls.Add(this.ButtonRej2AH);
-            this.groupBoxRejestr2.Location = new System.Drawing.Point(313, 19);
-            this.groupBoxRejestr2.Name = "groupBoxRejestr2";
-            this.groupBoxRejestr2.Size = new System.Drawing.Size(128, 169);
-            this.groupBoxRejestr2.TabIndex = 0;
-            this.groupBoxRejestr2.TabStop = false;
-            this.groupBoxRejestr2.Text = "Rejestr 2";
+            this.groupBoxRegister2.Controls.Add(this.ButtonRej2None);
+            this.groupBoxRegister2.Controls.Add(this.ButtonRej2DL);
+            this.groupBoxRegister2.Controls.Add(this.ButtonRej2DH);
+            this.groupBoxRegister2.Controls.Add(this.ButtonRej2CL);
+            this.groupBoxRegister2.Controls.Add(this.ButtonRej2CH);
+            this.groupBoxRegister2.Controls.Add(this.ButtonRej2BL);
+            this.groupBoxRegister2.Controls.Add(this.ButtonRej2BH);
+            this.groupBoxRegister2.Controls.Add(this.ButtonRej2AL);
+            this.groupBoxRegister2.Controls.Add(this.ButtonRej2AH);
+            this.groupBoxRegister2.Location = new System.Drawing.Point(313, 19);
+            this.groupBoxRegister2.Name = "groupBoxRegister2";
+            this.groupBoxRegister2.Size = new System.Drawing.Size(128, 169);
+            this.groupBoxRegister2.TabIndex = 0;
+            this.groupBoxRegister2.TabStop = false;
+            this.groupBoxRegister2.Text = "Register 2";
             // 
             // ButtonRej2None
             // 
@@ -434,82 +430,82 @@
             this.ButtonRej2AH.Text = "AXH";
             this.ButtonRej2AH.UseVisualStyleBackColor = true;
             // 
-            // textBoxAktualnyKrok
+            // textBoxCurrentStep
             // 
-            this.textBoxAktualnyKrok.Location = new System.Drawing.Point(593, 416);
-            this.textBoxAktualnyKrok.Name = "textBoxAktualnyKrok";
-            this.textBoxAktualnyKrok.ReadOnly = true;
-            this.textBoxAktualnyKrok.Size = new System.Drawing.Size(142, 22);
-            this.textBoxAktualnyKrok.TabIndex = 23;
+            this.textBoxCurrentStep.Location = new System.Drawing.Point(593, 416);
+            this.textBoxCurrentStep.Name = "textBoxCurrentStep";
+            this.textBoxCurrentStep.ReadOnly = true;
+            this.textBoxCurrentStep.Size = new System.Drawing.Size(142, 22);
+            this.textBoxCurrentStep.TabIndex = 23;
             // 
-            // labelKrok
+            // labelStep
             // 
-            this.labelKrok.AutoSize = true;
-            this.labelKrok.Location = new System.Drawing.Point(492, 419);
-            this.labelKrok.Name = "labelKrok";
-            this.labelKrok.Size = new System.Drawing.Size(95, 17);
-            this.labelKrok.TabIndex = 24;
-            this.labelKrok.Text = "Aktualny Krok";
+            this.labelStep.AutoSize = true;
+            this.labelStep.Location = new System.Drawing.Point(492, 419);
+            this.labelStep.Name = "labelStep";
+            this.labelStep.Size = new System.Drawing.Size(88, 17);
+            this.labelStep.TabIndex = 24;
+            this.labelStep.Text = "Current Step";
             // 
-            // checkBoxPracaKrokowa
+            // checkBoxStepWork
             // 
-            this.checkBoxPracaKrokowa.AutoSize = true;
-            this.checkBoxPracaKrokowa.Location = new System.Drawing.Point(493, 384);
-            this.checkBoxPracaKrokowa.Name = "checkBoxPracaKrokowa";
-            this.checkBoxPracaKrokowa.Size = new System.Drawing.Size(125, 21);
-            this.checkBoxPracaKrokowa.TabIndex = 27;
-            this.checkBoxPracaKrokowa.Text = "Praca Krokowa";
-            this.checkBoxPracaKrokowa.UseVisualStyleBackColor = true;
+            this.checkBoxStepWork.AutoSize = true;
+            this.checkBoxStepWork.Location = new System.Drawing.Point(493, 384);
+            this.checkBoxStepWork.Name = "checkBoxStepWork";
+            this.checkBoxStepWork.Size = new System.Drawing.Size(96, 21);
+            this.checkBoxStepWork.TabIndex = 27;
+            this.checkBoxStepWork.Text = "Step Work";
+            this.checkBoxStepWork.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.checkBoxPracaKrokowa);
-            this.Controls.Add(this.labelKrok);
-            this.Controls.Add(this.textBoxAktualnyKrok);
-            this.Controls.Add(this.groupBoxRejestr2);
-            this.Controls.Add(this.groupBoxRejestr1);
-            this.Controls.Add(this.groupBoxRozkaz);
-            this.Controls.Add(this.labelRejestry);
-            this.Controls.Add(this.textBoxRejestr);
-            this.Controls.Add(this.textBoxKod);
-            this.Controls.Add(this.buttonWczytaj);
-            this.Controls.Add(this.buttonZapisz);
-            this.Controls.Add(this.labelLiczba);
-            this.Controls.Add(this.numericUpDownLiczba);
+            this.Controls.Add(this.checkBoxStepWork);
+            this.Controls.Add(this.labelStep);
+            this.Controls.Add(this.textBoxCurrentStep);
+            this.Controls.Add(this.groupBoxRegister2);
+            this.Controls.Add(this.groupBoxRegister1);
+            this.Controls.Add(this.groupBoxOrder);
+            this.Controls.Add(this.labelRegisters);
+            this.Controls.Add(this.textBoxRejegister);
+            this.Controls.Add(this.textBoxCode);
+            this.Controls.Add(this.buttonLoad);
+            this.Controls.Add(this.buttonSave);
+            this.Controls.Add(this.labelValue);
+            this.Controls.Add(this.numericUpDownValue);
             this.Controls.Add(this.buttonStart);
-            this.Controls.Add(this.buttonDodaj_Rozkaz);
+            this.Controls.Add(this.buttonAdd_Order);
             this.Name = "Form1";
             this.Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownLiczba)).EndInit();
-            this.groupBoxRozkaz.ResumeLayout(false);
-            this.groupBoxRozkaz.PerformLayout();
-            this.groupBoxRejestr1.ResumeLayout(false);
-            this.groupBoxRejestr1.PerformLayout();
-            this.groupBoxRejestr2.ResumeLayout(false);
-            this.groupBoxRejestr2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownValue)).EndInit();
+            this.groupBoxOrder.ResumeLayout(false);
+            this.groupBoxOrder.PerformLayout();
+            this.groupBoxRegister1.ResumeLayout(false);
+            this.groupBoxRegister1.PerformLayout();
+            this.groupBoxRegister2.ResumeLayout(false);
+            this.groupBoxRegister2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.Button buttonDodaj_Rozkaz;
+        private System.Windows.Forms.Button buttonAdd_Order;
         private System.Windows.Forms.Button buttonStart;
-        private System.Windows.Forms.NumericUpDown numericUpDownLiczba;
-        private System.Windows.Forms.Label labelLiczba;
-        private System.Windows.Forms.Button buttonZapisz;
-        private System.Windows.Forms.Button buttonWczytaj;
-        private System.Windows.Forms.TextBox textBoxKod;
-        private System.Windows.Forms.TextBox textBoxRejestr;
-        private System.Windows.Forms.Label labelRejestry;
+        private System.Windows.Forms.NumericUpDown numericUpDownValue;
+        private System.Windows.Forms.Label labelValue;
+        private System.Windows.Forms.Button buttonSave;
+        private System.Windows.Forms.Button buttonLoad;
+        private System.Windows.Forms.TextBox textBoxCode;
+        private System.Windows.Forms.TextBox textBoxRejegister;
+        private System.Windows.Forms.Label labelRegisters;
         private System.Windows.Forms.RadioButton radioButtonMOV;
         private System.Windows.Forms.RadioButton radioButtonSUB;
         private System.Windows.Forms.RadioButton radioButtonADD;
-        private System.Windows.Forms.GroupBox groupBoxRozkaz;
-        private System.Windows.Forms.GroupBox groupBoxRejestr1;
+        private System.Windows.Forms.GroupBox groupBoxOrder;
+        private System.Windows.Forms.GroupBox groupBoxRegister1;
         private System.Windows.Forms.RadioButton ButtonRej1DL;
         private System.Windows.Forms.RadioButton ButtonRej1DH;
         private System.Windows.Forms.RadioButton ButtonRej1CL;
@@ -518,7 +514,7 @@
         private System.Windows.Forms.RadioButton ButtonRej1BH;
         private System.Windows.Forms.RadioButton ButtonRej1AL;
         private System.Windows.Forms.RadioButton ButtonRej1AH;
-        private System.Windows.Forms.GroupBox groupBoxRejestr2;
+        private System.Windows.Forms.GroupBox groupBoxRegister2;
         private System.Windows.Forms.RadioButton ButtonRej2None;
         private System.Windows.Forms.RadioButton ButtonRej2DL;
         private System.Windows.Forms.RadioButton ButtonRej2DH;
@@ -528,9 +524,9 @@
         private System.Windows.Forms.RadioButton ButtonRej2BH;
         private System.Windows.Forms.RadioButton ButtonRej2AL;
         private System.Windows.Forms.RadioButton ButtonRej2AH;
-        private System.Windows.Forms.TextBox textBoxAktualnyKrok;
-        private System.Windows.Forms.Label labelKrok;
-        private System.Windows.Forms.CheckBox checkBoxPracaKrokowa;
+        private System.Windows.Forms.TextBox textBoxCurrentStep;
+        private System.Windows.Forms.Label labelStep;
+        private System.Windows.Forms.CheckBox checkBoxStepWork;
     }
 }
 
