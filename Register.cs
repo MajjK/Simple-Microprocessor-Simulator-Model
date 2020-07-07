@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace Lab1
 {
@@ -17,6 +17,12 @@ namespace Lab1
         public int ReturnValue()
         {
             return Value;
+        }
+
+        public void ZeroValue()
+        {
+            Value = 0;
+            ValueL = 0;
         }
 
         public string ReturnName()
